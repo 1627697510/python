@@ -42,7 +42,7 @@ for i in range(1,6):
     for item in content_list:
         print item
     #内涵段子的踩数
-    content_pattern = re.compile('<a.*?title="顶">.*?<div class="dingcai">.*?<span></span>.*?<i>(.*?)</i>', re.S)
+    content_pattern = re.compile('<a.*?title="踩">.*?<div class="dingcai">.*?<span></span>.*?<i>(.*?)</i>', re.S)
     content_list = re.findall(content_pattern, html)
     for item in content_list:
         print item
